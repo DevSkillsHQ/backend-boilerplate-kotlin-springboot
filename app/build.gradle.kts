@@ -22,7 +22,7 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
-	implementation("org.xerial:sqlite-jdbc:3.32.3.2")
+	implementation("org.xerial:sqlite-jdbc:3.45.1.0")
 	implementation("com.github.gwenn:sqlite-dialect:0.1.0")
 }
 
