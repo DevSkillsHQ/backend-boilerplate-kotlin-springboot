@@ -1,4 +1,5 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
 	id("org.springframework.boot") version "3.5.4"
@@ -27,9 +28,9 @@ dependencies {
 }
 
 tasks.withType<KotlinCompile> {
-	kotlinOptions {
-		freeCompilerArgs = listOf("-Xjsr305=strict")
-		jvmTarget = "17"
+	compilerOptions {
+		freeCompilerArgs.addAll("-Xjsr305=strict")
+		jvmTarget.set(JvmTarget.JVM_17)
 	}
 }
 
